@@ -1,0 +1,89 @@
+.#{$cocktail_class_prefix}max-width-full {
+  max-width: 100%;
+  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+    &--#{$nameBreakpointSuffix} {
+      @include respondTo(#{$valueBreakpointSuffix}) {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.#{$cocktail_class_prefix}max-width-full-view {
+  max-width: 100vw;
+  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+    &--#{$nameBreakpointSuffix} {
+      @include respondTo(#{$valueBreakpointSuffix}) {
+        max-width: 100vw;
+      }
+    }
+  }
+}
+
+.#{$cocktail_class_prefix}min-width-full {
+  min-width: 100%;
+  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+    &--#{$nameBreakpointSuffix} {
+      @include respondTo(#{$valueBreakpointSuffix}) {
+        min-width: 100%;
+      }
+    }
+  }
+}
+
+.#{$cocktail_class_prefix}min-width-full-view {
+  min-width: 100vw;
+  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+    &--#{$nameBreakpointSuffix} {
+      @include respondTo(#{$valueBreakpointSuffix}) {
+        min-width: 100vw;
+      }
+    }
+  }
+}
+
+.#{$cocktail_class_prefix}width-full {
+  width: 100%;
+  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+    &--#{$nameBreakpointSuffix} {
+      @include respondTo(#{$valueBreakpointSuffix}) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.#{$cocktail_class_prefix}width-auto {
+  width: auto;
+  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+    &--#{$nameBreakpointSuffix} {
+      @include respondTo(#{$valueBreakpointSuffix}) {
+        width: auto;
+      }
+    }
+  }
+}
+
+.#{$cocktail_class_prefix}width-0-5 {
+  width: 0.5rem;
+}
+
+.#{$cocktail_class_prefix}width-1 {
+  width: 1rem;
+}
+
+.#{$cocktail_class_prefix}width-1-5 {
+  width: 1.5rem;
+}
+
+.#{$cocktail_class_prefix}width-2 {
+  width: 2rem;
+}
+
+.#{$cocktail_class_prefix}width-2-5 {
+  width: 2.5rem;
+}
+
+.#{$cocktail_class_prefix}width-3 {
+  width: 3rem;
+}

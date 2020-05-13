@@ -1,0 +1,79 @@
+@each $nameSizeSuffix, $valueSizeSuffix in $sizeList {
+  .#{$cocktail_class_prefix}padding-top-#{$nameSizeSuffix},
+  .#{$cocktail_class_prefix}padding-y-#{$nameSizeSuffix},
+  .#{$cocktail_class_prefix}padding-#{$nameSizeSuffix} {
+    padding-top: $valueSizeSuffix;
+  }
+}
+
+@each $breakpointName, $breakpointWidth in $breakpointSuffixWidthList {
+  @media screen and (min-width: $breakpointWidth) {
+    @each $nameSizeSuffix, $valueSizeSuffix in $sizeList {
+      .#{$cocktail_class_prefix}padding-top-#{$nameSizeSuffix}--#{$breakpointName},
+      .#{$cocktail_class_prefix}padding-y-#{$nameSizeSuffix}--#{$breakpointName},
+      .#{$cocktail_class_prefix}padding-#{$nameSizeSuffix}--#{$breakpointName} {
+        padding-top: $valueSizeSuffix;
+      }
+    }
+  }
+}
+
+@each $nameSizeSuffix, $valueSizeSuffix in $sizeList {
+  .#{$cocktail_class_prefix}padding-right-#{$nameSizeSuffix},
+  .#{$cocktail_class_prefix}padding-x-#{$nameSizeSuffix},
+  .#{$cocktail_class_prefix}padding-#{$nameSizeSuffix} {
+    padding-right: $valueSizeSuffix;
+  }
+}
+
+@each $breakpointName, $breakpointWidth in $breakpointSuffixWidthList {
+  @media screen and (min-width: $breakpointWidth) {
+    @each $nameSizeSuffix, $valueSizeSuffix in $sizeList {
+      .#{$cocktail_class_prefix}padding-right-#{$nameSizeSuffix}--#{$breakpointName},
+      .#{$cocktail_class_prefix}padding-x-#{$nameSizeSuffix}--#{$breakpointName},
+      .#{$cocktail_class_prefix}padding-#{$nameSizeSuffix}--#{$breakpointName} {
+        padding-right: $valueSizeSuffix;
+      }
+    }
+  }
+}
+
+@each $nameSizeSuffix, $valueSizeSuffix in $sizeList {
+  .#{$cocktail_class_prefix}padding-bottom-#{$nameSizeSuffix},
+  .#{$cocktail_class_prefix}padding-y-#{$nameSizeSuffix},
+  .#{$cocktail_class_prefix}padding-#{$nameSizeSuffix} {
+    padding-bottom: $valueSizeSuffix;
+  }
+}
+
+@each $breakpointName, $breakpointWidth in $breakpointSuffixWidthList {
+  @media screen and (min-width: $breakpointWidth) {
+    @each $nameSizeSuffix, $valueSizeSuffix in $sizeList {
+      .#{$cocktail_class_prefix}padding-bottom-#{$nameSizeSuffix}--#{$breakpointName},
+      .#{$cocktail_class_prefix}padding-y-#{$nameSizeSuffix}--#{$breakpointName},
+      .#{$cocktail_class_prefix}padding-#{$nameSizeSuffix}--#{$breakpointName} {
+        padding-bottom: $valueSizeSuffix;
+      }
+    }
+  }
+}
+
+@each $nameSizeSuffix, $valueSizeSuffix in $sizeList {
+  .#{$cocktail_class_prefix}padding-left-#{$nameSizeSuffix},
+  .#{$cocktail_class_prefix}padding-x-#{$nameSizeSuffix},
+  .#{$cocktail_class_prefix}padding-#{$nameSizeSuffix} {
+    padding-left: $valueSizeSuffix;
+  }
+}
+
+@each $breakpointName, $breakpointWidth in $breakpointSuffixWidthList {
+  @media screen and (min-width: $breakpointWidth) {
+    @each $nameSizeSuffix, $valueSizeSuffix in $sizeList {
+      .#{$cocktail_class_prefix}padding-left-#{$nameSizeSuffix}--#{$breakpointName},
+      .#{$cocktail_class_prefix}padding-x-#{$nameSizeSuffix}--#{$breakpointName},
+      .#{$cocktail_class_prefix}padding-#{$nameSizeSuffix}--#{$breakpointName} {
+        padding-left: $valueSizeSuffix;
+      }
+    }
+  }
+}

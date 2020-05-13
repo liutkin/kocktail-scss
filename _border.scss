@@ -1,0 +1,31 @@
+.#{$cocktail_class_prefix}border-round {
+  border-radius: 100%;
+}
+
+.#{$cocktail_class_prefix}border-rounded-1 {
+  border-radius: 0.125rem;
+}
+
+.#{$cocktail_class_prefix}border-rounded-2 {
+  border-radius: 0.25rem;
+}
+
+.#{$cocktail_class_prefix}border-rounded-3 {
+  border-radius: 0.5rem;
+}
+
+.#{$cocktail_class_prefix}border-rounded-4 {
+  border-radius: 0.75rem;
+}
+
+.#{$cocktail_class_prefix}border-rounded-5 {
+  border-radius: 1rem;
+}
+
+.#{$cocktail_class_prefix}border-rounded-6 {
+  border-radius: 2rem;
+}
+
+.#{$cocktail_class_prefix}border-rounded-max {
+  border-radius: 9999px;
+}

@@ -1,0 +1,47 @@
+.#{$cocktail_class_prefix}#{$cocktail_class_prefix}bg-center {
+  background-position: center center;
+}
+
+.#{$cocktail_class_prefix}bg-top {
+  background-position: center top;
+}
+
+.#{$cocktail_class_prefix}bg-right {
+  background-position: right center;
+}
+
+.#{$cocktail_class_prefix}bg-bottom {
+  background-position: center bottom;
+}
+
+.#{$cocktail_class_prefix}bg-left {
+  background-position: left center;
+}
+
+.#{$cocktail_class_prefix}bg-cover {
+  background-size: cover;
+}
+
+.#{$cocktail_class_prefix}bg-contain {
+  background-size: contain;
+}
+
+.#{$cocktail_class_prefix}bg-width-full {
+  background-size: 100% auto;
+}
+
+.#{$cocktail_class_prefix}bg-height-full {
+  background-size: auto 100%;
+}
+
+.#{$cocktail_class_prefix}bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.#{$cocktail_class_prefix}bg-fixed {
+  background-attachment: fixed;
+}
+
+.#{$cocktail_class_prefix}bg-white {
+  background-color: white;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@kocktail/scss",
+  "version": "1.0.0",
+  "description": "Functional CSS classes.",
+  "main": "kocktail.scss",
+  "keywords": [
+    "modular",
+    "utility",
+    "helper",
+    "functional",
+    "scss"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liutkin/kocktail-scss.git"
+  },
+  "author": "Vladimir Liutkin <vladimir@liutkin.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liutkin/kocktail-scss/issues"
+  },
+  "homepage": "https://github.com/liutkin/kocktail-scss#readme"
+}

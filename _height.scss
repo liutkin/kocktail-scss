@@ -1,0 +1,76 @@
+.#{$cocktail_class_prefix}max-height-full {
+  max-height: 100%;
+  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+    &--#{$nameBreakpointSuffix} {
+      @include respondTo(#{$valueBreakpointSuffix}) {
+        max-height: 100%;
+      }
+    }
+  }
+}
+
+.#{$cocktail_class_prefix}max-height-full-view {
+  max-height: 100vh;
+  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+    &--#{$nameBreakpointSuffix} {
+      @include respondTo(#{$valueBreakpointSuffix}) {
+        max-height: 100vh;
+      }
+    }
+  }
+}
+
+.#{$cocktail_class_prefix}min-height-full {
+  min-height: 100%;
+  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+    &--#{$nameBreakpointSuffix} {
+      @include respondTo(#{$valueBreakpointSuffix}) {
+        min-height: 100%;
+      }
+    }
+  }
+}
+
+.#{$cocktail_class_prefix}min-height-full-view {
+  min-height: 100vh;
+  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+    &--#{$nameBreakpointSuffix} {
+      @include respondTo(#{$valueBreakpointSuffix}) {
+        min-height: 100vh;
+      }
+    }
+  }
+}
+
+.#{$cocktail_class_prefix}height-full-view {
+  height: 100vh;
+  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+    &--#{$nameBreakpointSuffix} {
+      @include respondTo(#{$valueBreakpointSuffix}) {
+        height: 100vh;
+      }
+    }
+  }
+}
+
+.#{$cocktail_class_prefix}height-full {
+  height: 100%;
+  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+    &--#{$nameBreakpointSuffix} {
+      @include respondTo(#{$valueBreakpointSuffix}) {
+        height: 100%;
+      }
+    }
+  }
+}
+
+.#{$cocktail_class_prefix}height-auto {
+  height: auto;
+  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+    &--#{$nameBreakpointSuffix} {
+      @include respondTo(#{$valueBreakpointSuffix}) {
+        height: auto;
+      }
+    }
+  }
+}

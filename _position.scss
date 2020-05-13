@@ -1,0 +1,121 @@
+.#{$cocktail_class_prefix}static {
+  position: static;
+  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+    &--#{$nameBreakpointSuffix} {
+      @include respondTo(#{$valueBreakpointSuffix}) {
+        position: static;
+      }
+    }
+  }
+}
+
+.#{$cocktail_class_prefix}relative {
+  position: relative;
+  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+    &--#{$nameBreakpointSuffix} {
+      @include respondTo(#{$valueBreakpointSuffix}) {
+        position: relative;
+      }
+    }
+  }
+}
+
+.#{$cocktail_class_prefix}absolute {
+  position: absolute;
+  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+    &--#{$nameBreakpointSuffix} {
+      @include respondTo(#{$valueBreakpointSuffix}) {
+        position: absolute;
+      }
+    }
+  }
+}
+
+.#{$cocktail_class_prefix}fixed {
+  position: fixed;
+  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+    &--#{$nameBreakpointSuffix} {
+      @include respondTo(#{$valueBreakpointSuffix}) {
+        position: fixed;
+      }
+    }
+  }
+}
+
+.#{$cocktail_class_prefix}sticky {
+  position: sticky;
+  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+    &--#{$nameBreakpointSuffix} {
+      @include respondTo(#{$valueBreakpointSuffix}) {
+        position: sticky;
+      }
+    }
+  }
+}
+
+.#{$cocktail_class_prefix}top-0 {
+  top: 0;
+}
+
+.#{$cocktail_class_prefix}right-0 {
+  right: 0;
+}
+
+.#{$cocktail_class_prefix}bottom-0 {
+  bottom: 0;
+}
+
+.#{$cocktail_class_prefix}left-0 {
+  left: 0;
+}
+
+.#{$cocktail_class_prefix}top-full {
+  top: 100%;
+}
+
+.#{$cocktail_class_prefix}right-full {
+  right: 100%;
+}
+
+.#{$cocktail_class_prefix}bottom-full {
+  bottom: 100%;
+}
+
+.#{$cocktail_class_prefix}left-full {
+  left: 100%;
+}
+
+.#{$cocktail_class_prefix}stretch {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.#{$cocktail_class_prefix}center-x {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.#{$cocktail_class_prefix}center-y {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.#{$cocktail_class_prefix}center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+$i: 1;
+@while $i <= 5 {
+  .#{$cocktail_class_prefix}z-index-#{$i} {
+    z-index: #{$i};
+  }
+  $i: $i + 1;
+}
+
+.#{$cocktail_class_prefix}z-index-max {
+  z-index: 2147483647;
+}

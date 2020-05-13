@@ -1,0 +1,64 @@
+@each $nameSizeSuffix, $valueSizeSuffix in $gridSpanList {
+  .#{$cocktail_class_prefix}grid-column-#{$nameSizeSuffix} {
+    grid-column: $valueSizeSuffix;
+    @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+      &--#{$nameBreakpointSuffix} {
+        @include respondTo(#{$valueBreakpointSuffix}) {
+          grid-column: $valueSizeSuffix;
+        }
+      }
+    }
+  }
+}
+
+@each $nameSizeSuffix, $valueSizeSuffix in $gridSpanList {
+  .#{$cocktail_class_prefix}grid-column-start-#{$nameSizeSuffix} {
+    grid-column-start: $nameSizeSuffix;
+    @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+      &--#{$nameBreakpointSuffix} {
+        @include respondTo(#{$valueBreakpointSuffix}) {
+          grid-column-start: $nameSizeSuffix;
+        }
+      }
+    }
+  }
+}
+
+@each $nameSizeSuffix, $valueSizeSuffix in $gridGapList {
+  .#{$cocktail_class_prefix}grid-column-gap-#{$nameSizeSuffix} {
+    grid-column-gap: $valueSizeSuffix;
+    @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+      &--#{$nameBreakpointSuffix} {
+        @include respondTo(#{$valueBreakpointSuffix}) {
+          grid-column-gap: $valueSizeSuffix;
+        }
+      }
+    }
+  }
+}
+
+@each $nameSizeSuffix, $valueSizeSuffix in $gridGapList {
+  .#{$cocktail_class_prefix}grid-row-gap-#{$nameSizeSuffix} {
+    grid-row-gap: $valueSizeSuffix;
+    @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+      &--#{$nameBreakpointSuffix} {
+        @include respondTo(#{$valueBreakpointSuffix}) {
+          grid-row-gap: $valueSizeSuffix;
+        }
+      }
+    }
+  }
+}
+
+@each $nameSizeSuffix, $valueSizeSuffix in $gridGapList {
+  .#{$cocktail_class_prefix}grid-gap-#{$nameSizeSuffix} {
+    grid-gap: $valueSizeSuffix;
+    @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+      &--#{$nameBreakpointSuffix} {
+        @include respondTo(#{$valueBreakpointSuffix}) {
+          grid-gap: $valueSizeSuffix;
+        }
+      }
+    }
+  }
+}

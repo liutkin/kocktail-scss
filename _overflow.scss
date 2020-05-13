@@ -1,0 +1,65 @@
+.#{$cocktail_class_prefix}overflow-hidden {
+  overflow: hidden;
+  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+    &--#{$nameBreakpointSuffix} {
+      @include respondTo(#{$valueBreakpointSuffix}) {
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.#{$cocktail_class_prefix}overflow-auto {
+  overflow: auto;
+  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+    &--#{$nameBreakpointSuffix} {
+      @include respondTo(#{$valueBreakpointSuffix}) {
+        overflow: auto;
+      }
+    }
+  }
+}
+
+.#{$cocktail_class_prefix}overflow-x-auto {
+  overflow-x: auto;
+  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+    &--#{$nameBreakpointSuffix} {
+      @include respondTo(#{$valueBreakpointSuffix}) {
+        overflow-x: auto;
+      }
+    }
+  }
+}
+
+.#{$cocktail_class_prefix}overflow-y-auto {
+  overflow-y: auto;
+  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+    &--#{$nameBreakpointSuffix} {
+      @include respondTo(#{$valueBreakpointSuffix}) {
+        overflow-y: auto;
+      }
+    }
+  }
+}
+
+.#{$cocktail_class_prefix}overflow-x-hidden {
+  overflow-x: hidden;
+  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+    &--#{$nameBreakpointSuffix} {
+      @include respondTo(#{$valueBreakpointSuffix}) {
+        overflow-x: hidden;
+      }
+    }
+  }
+}
+
+.#{$cocktail_class_prefix}overflow-y-hidden {
+  overflow-y: hidden;
+  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
+    &--#{$nameBreakpointSuffix} {
+      @include respondTo(#{$valueBreakpointSuffix}) {
+        overflow-y: hidden;
+      }
+    }
+  }
+}
