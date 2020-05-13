@@ -1,4 +1,4 @@
-.#{$cocktail_class_prefix}block {
+.#{$kocktail_class_prefix}block {
   display: block;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -9,7 +9,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}inline-block {
+.#{$kocktail_class_prefix}inline-block {
   display: inline-block;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -20,7 +20,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}inline {
+.#{$kocktail_class_prefix}inline {
   display: inline;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -31,7 +31,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}flex {
+.#{$kocktail_class_prefix}flex {
   display: flex;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -42,7 +42,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}inline-flex {
+.#{$kocktail_class_prefix}inline-flex {
   display: inline-flex;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -53,7 +53,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}grid {
+.#{$kocktail_class_prefix}grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
@@ -66,7 +66,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}hidden {
+.#{$kocktail_class_prefix}hidden {
   display: none;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {

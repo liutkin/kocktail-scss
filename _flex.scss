@@ -1,4 +1,4 @@
-.#{$cocktail_class_prefix}justify-start {
+.#{$kocktail_class_prefix}justify-start {
   justify-content: flex-start;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -9,7 +9,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}justify-end {
+.#{$kocktail_class_prefix}justify-end {
   justify-content: flex-end;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -20,7 +20,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}justify-center {
+.#{$kocktail_class_prefix}justify-center {
   justify-content: center;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -31,7 +31,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}justify-between {
+.#{$kocktail_class_prefix}justify-between {
   justify-content: space-between;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -42,7 +42,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}justify-around {
+.#{$kocktail_class_prefix}justify-around {
   justify-content: space-around;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -53,7 +53,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}items-start {
+.#{$kocktail_class_prefix}items-start {
   align-items: flex-start;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -64,7 +64,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}items-end {
+.#{$kocktail_class_prefix}items-end {
   align-items: flex-end;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -75,7 +75,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}items-center {
+.#{$kocktail_class_prefix}items-center {
   align-items: center;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -86,7 +86,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}items-baseline {
+.#{$kocktail_class_prefix}items-baseline {
   align-items: baseline;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -97,7 +97,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}items-stretch {
+.#{$kocktail_class_prefix}items-stretch {
   align-items: stretch;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -108,7 +108,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}flex-column {
+.#{$kocktail_class_prefix}flex-column {
   flex-direction: column;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -119,7 +119,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}flex-row {
+.#{$kocktail_class_prefix}flex-row {
   flex-direction: row;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -130,7 +130,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}flex-wrap {
+.#{$kocktail_class_prefix}flex-wrap {
   flex-wrap: wrap;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -141,7 +141,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}flex-nowrap {
+.#{$kocktail_class_prefix}flex-nowrap {
   flex-wrap: nowrap;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -152,7 +152,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}flex-no-grow {
+.#{$kocktail_class_prefix}flex-no-grow {
   flex-grow: 0;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -163,7 +163,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}flex-grow {
+.#{$kocktail_class_prefix}flex-grow {
   flex-grow: 1;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -174,7 +174,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}flex-no-shrink {
+.#{$kocktail_class_prefix}flex-no-shrink {
   flex-shrink: 0;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -185,7 +185,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}flex-shrink {
+.#{$kocktail_class_prefix}flex-shrink {
   flex-shrink: 1;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -196,7 +196,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}flex-basis-auto {
+.#{$kocktail_class_prefix}flex-basis-auto {
   flex-basis: auto;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -207,7 +207,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}flex-no-basis {
+.#{$kocktail_class_prefix}flex-no-basis {
   flex-basis: 0;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {

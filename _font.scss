@@ -1,4 +1,4 @@
-.#{$cocktail_class_prefix}font-xs {
+.#{$kocktail_class_prefix}font-xs {
   font-size: 0.75rem;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -9,7 +9,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}font-sm {
+.#{$kocktail_class_prefix}font-sm {
   font-size: 0.875rem;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -20,7 +20,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}font-nl {
+.#{$kocktail_class_prefix}font-nl {
   font-size: 1rem;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -31,7 +31,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}font-lg {
+.#{$kocktail_class_prefix}font-lg {
   font-size: 1.25rem;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -42,7 +42,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}font-xl {
+.#{$kocktail_class_prefix}font-xl {
   font-size: 1.5rem;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -53,7 +53,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}font-2xl {
+.#{$kocktail_class_prefix}font-2xl {
   font-size: 1.875rem;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -64,7 +64,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}font-3xl {
+.#{$kocktail_class_prefix}font-3xl {
   font-size: 2.25rem;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -75,7 +75,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}font-4xl {
+.#{$kocktail_class_prefix}font-4xl {
   font-size: 3rem;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -86,7 +86,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}font-5xl {
+.#{$kocktail_class_prefix}font-5xl {
   font-size: 4rem;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -97,26 +97,26 @@
   }
 }
 
-.#{$cocktail_class_prefix}font-light {
+.#{$kocktail_class_prefix}font-light {
   font-weight: 300;
 }
 
-.#{$cocktail_class_prefix}font-normal {
+.#{$kocktail_class_prefix}font-normal {
   font-weight: normal;
 }
 
-.#{$cocktail_class_prefix}font-medium {
+.#{$kocktail_class_prefix}font-medium {
   font-weight: 500;
 }
 
-.#{$cocktail_class_prefix}font-bold {
+.#{$kocktail_class_prefix}font-bold {
   font-weight: bold;
 }
 
-.#{$cocktail_class_prefix}font-black {
+.#{$kocktail_class_prefix}font-black {
   font-weight: 900;
 }
 
-.#{$cocktail_class_prefix}font-italic {
+.#{$kocktail_class_prefix}font-italic {
   font-style: italic;
 }

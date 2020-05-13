@@ -1,4 +1,4 @@
-.#{$cocktail_class_prefix}overflow-hidden {
+.#{$kocktail_class_prefix}overflow-hidden {
   overflow: hidden;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -9,7 +9,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}overflow-auto {
+.#{$kocktail_class_prefix}overflow-auto {
   overflow: auto;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -20,7 +20,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}overflow-x-auto {
+.#{$kocktail_class_prefix}overflow-x-auto {
   overflow-x: auto;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -31,7 +31,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}overflow-y-auto {
+.#{$kocktail_class_prefix}overflow-y-auto {
   overflow-y: auto;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -42,7 +42,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}overflow-x-hidden {
+.#{$kocktail_class_prefix}overflow-x-hidden {
   overflow-x: hidden;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -53,7 +53,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}overflow-y-hidden {
+.#{$kocktail_class_prefix}overflow-y-hidden {
   overflow-y: hidden;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {

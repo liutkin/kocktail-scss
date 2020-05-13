@@ -1,4 +1,4 @@
-.#{$cocktail_class_prefix}transparent {
+.#{$kocktail_class_prefix}transparent {
   opacity: 0;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -9,7 +9,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}opaque {
+.#{$kocktail_class_prefix}opaque {
   opacity: 1;
   @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
     &--#{$nameBreakpointSuffix} {
@@ -20,7 +20,7 @@
   }
 }
 
-.#{$cocktail_class_prefix}hover-trigger {
+.#{$kocktail_class_prefix}hover-trigger {
   &:hover,
   &:focus {
     .hover-content {
@@ -29,22 +29,22 @@
   }
 }
 
-.#{$cocktail_class_prefix}float-left {
+.#{$kocktail_class_prefix}float-left {
   float: left;
 }
 
-.#{$cocktail_class_prefix}float-right {
+.#{$kocktail_class_prefix}float-right {
   float: right;
 }
 
-.#{$cocktail_class_prefix}color-white {
+.#{$kocktail_class_prefix}color-white {
   color: white;
 }
 
-.#{$cocktail_class_prefix}color-black {
+.#{$kocktail_class_prefix}color-black {
   color: black;
 }
 
-.#{$cocktail_class_prefix}fill-current-color {
+.#{$kocktail_class_prefix}fill-current-color {
   fill: currentColor;
 }
