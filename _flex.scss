@@ -1,219 +1,241 @@
-.#{$kocktail_class_prefix}justify-start {
+.#{$kocktail--class-prefix}justify-start {
   justify-content: flex-start;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        justify-content: flex-start;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}justify-end {
+.#{$kocktail--class-prefix}justify-end {
   justify-content: flex-end;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        justify-content: flex-end;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}justify-center {
+.#{$kocktail--class-prefix}justify-center {
   justify-content: center;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        justify-content: center;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}justify-between {
+.#{$kocktail--class-prefix}justify-between {
   justify-content: space-between;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        justify-content: space-between;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}justify-around {
+.#{$kocktail--class-prefix}justify-around {
   justify-content: space-around;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        justify-content: space-around;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}items-start {
+.#{$kocktail--class-prefix}items-start {
   align-items: flex-start;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        align-items: flex-start;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}items-end {
+.#{$kocktail--class-prefix}items-end {
   align-items: flex-end;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        align-items: flex-end;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}items-center {
+.#{$kocktail--class-prefix}items-center {
   align-items: center;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        align-items: center;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}items-baseline {
+.#{$kocktail--class-prefix}items-baseline {
   align-items: baseline;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        align-items: baseline;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}items-stretch {
+.#{$kocktail--class-prefix}items-stretch {
   align-items: stretch;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        align-items: stretch;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}flex-column {
+.#{$kocktail--class-prefix}flex-column {
   flex-direction: column;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        flex-direction: column;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}flex-row {
+.#{$kocktail--class-prefix}flex-row {
   flex-direction: row;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        flex-direction: row;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}flex-wrap {
+.#{$kocktail--class-prefix}flex-wrap {
   flex-wrap: wrap;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        flex-wrap: wrap;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}flex-nowrap {
+.#{$kocktail--class-prefix}flex-nowrap {
   flex-wrap: nowrap;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        flex-wrap: nowrap;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}flex-no-grow {
+.#{$kocktail--class-prefix}flex-no-grow {
   flex-grow: 0;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        flex-grow: 0;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}flex-grow {
+.#{$kocktail--class-prefix}flex-grow {
   flex-grow: 1;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        flex-grow: 1;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}flex-no-shrink {
+.#{$kocktail--class-prefix}flex-no-shrink {
   flex-shrink: 0;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        flex-shrink: 0;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}flex-shrink {
+.#{$kocktail--class-prefix}flex-shrink {
   flex-shrink: 1;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        flex-shrink: 1;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}flex-basis-auto {
+.#{$kocktail--class-prefix}flex-basis-auto {
   flex-basis: auto;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        flex-basis: auto;
-      }
+}
+
+.#{$kocktail--class-prefix}flex-no-basis {
+  flex-basis: 0;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Media queries
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .justify-start--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      justify-content: flex-start;
     }
   }
 }
 
-.#{$kocktail_class_prefix}flex-no-basis {
-  flex-basis: 0;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        flex-basis: 0;
-      }
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .justify-end--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      justify-content: flex-end;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .justify-center--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      justify-content: center;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .justify-between--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      justify-content: space-between;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .justify-around--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      justify-content: space-around;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .items-start--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      align-items: flex-start;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .items-end--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      align-items: flex-end;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .items-center--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      align-items: center;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .items-baseline--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      align-items: baseline;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .items-stretch--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      align-items: stretch;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .flex-column--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      flex-direction: column;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .flex-row--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      flex-direction: row;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .flex-wrap--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .flex-nowrap--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .flex-no-grow--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      flex-grow: 0;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .flex-grow--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      flex-grow: 1;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .flex-no-shrink--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      flex-shrink: 0;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .flex-shrink--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      flex-shrink: 1;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .flex-basis-auto--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      flex-basis: auto;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .flex-no-basis--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      flex-basis: 0;
     }
   }
 }

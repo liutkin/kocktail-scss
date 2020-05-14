@@ -1,35 +1,35 @@
-.#{$kocktail_class_prefix}cursor-default {
+.#{$kocktail--class-prefix}cursor-default {
   cursor: default;
 }
 
-.#{$kocktail_class_prefix}cursor-pointer {
+.#{$kocktail--class-prefix}cursor-pointer {
   cursor: pointer;
 }
 
-.#{$kocktail_class_prefix}cursor-wait {
+.#{$kocktail--class-prefix}cursor-wait {
   cursor: wait;
 }
 
-.#{$kocktail_class_prefix}cursor-progress {
+.#{$kocktail--class-prefix}cursor-progress {
   cursor: progress;
 }
 
-.#{$kocktail_class_prefix}cursor-not {
+.#{$kocktail--class-prefix}cursor-not {
   cursor: not-allowed;
 }
 
-.#{$kocktail_class_prefix}cursor-help {
+.#{$kocktail--class-prefix}cursor-help {
   cursor: help;
 }
 
-.#{$kocktail_class_prefix}cursor-zoom-in {
+.#{$kocktail--class-prefix}cursor-zoom-in {
   cursor: zoom-in;
 }
 
-.#{$kocktail_class_prefix}no-select {
+.#{$kocktail--class-prefix}no-select {
   user-select: none;
 }
 
-.#{$kocktail_class_prefix}no-pointer-events {
+.#{$kocktail--class-prefix}no-pointer-events {
   pointer-events: none;
 }

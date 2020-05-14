@@ -1,5 +1,67 @@
-@mixin respondTo($media) {
-  @media screen and (min-width: map-get($breakpointList, #{$media})) {
+@mixin respond-to($media, $width) {
+  @if $media == xs {
+    @if $width == min {
+      @media screen and (min-width: $kocktail--breakpoint-xs) {
+        @content;
+      }
+    } @else if $width == max {
+      @media screen and (max-width: $kocktail--breakpoint-xs) {
+        @content;
+      }
+    }
+  }
+
+  @if $media == md {
+    @if $width == min {
+      @media screen and (min-width: $kocktail--breakpoint-md) {
+        @content;
+      }
+    } @else if $width == max {
+      @media screen and (max-width: $kocktail--breakpoint-md) {
+        @content;
+      }
+    }
+  }
+
+  @if $media == lg {
+    @if $width == min {
+      @media screen and (min-width: $kocktail--breakpoint-lg) {
+        @content;
+      }
+    } @else if $width == max {
+      @media screen and (max-width: $kocktail--breakpoint-lg) {
+        @content;
+      }
+    }
+  }
+
+  @if $media == xl {
+    @if $width == min {
+      @media screen and (min-width: $kocktail--breakpoint-xl) {
+        @content;
+      }
+    } @else if $width == max {
+      @media screen and (max-width: $kocktail--breakpoint-xl) {
+        @content;
+      }
+    }
+  }
+
+  @if $media == xxl {
+    @if $width == min {
+      @media screen and (min-width: $kocktail--breakpoint-xxl) {
+        @content;
+      }
+    } @else if $width == max {
+      @media screen and (max-width: $kocktail--breakpoint-xxl) {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin mod($mod) {
+  @at-root #{&}#{&}--#{$mod} {
     @content;
   }
 }

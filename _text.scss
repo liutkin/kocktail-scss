@@ -1,88 +1,93 @@
-.#{$kocktail_class_prefix}text-center {
+.#{$kocktail--class-prefix}text-center {
   text-align: center;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        text-align: center;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}text-left {
+.#{$kocktail--class-prefix}text-left {
   text-align: left;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        text-align: left;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}text-right {
+.#{$kocktail--class-prefix}text-right {
   text-align: right;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        text-align: right;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}text-top {
+.#{$kocktail--class-prefix}text-top {
   vertical-align: top;
 }
 
-.#{$kocktail_class_prefix}text-middle {
+.#{$kocktail--class-prefix}text-middle {
   vertical-align: middle;
 }
 
-.#{$kocktail_class_prefix}text-bottom {
+.#{$kocktail--class-prefix}text-bottom {
   vertical-align: bottom;
 }
 
-.#{$kocktail_class_prefix}text-baseline {
+.#{$kocktail--class-prefix}text-baseline {
   vertical-align: baseline;
 }
 
-.#{$kocktail_class_prefix}text-nowrap {
+.#{$kocktail--class-prefix}text-nowrap {
   white-space: nowrap;
 }
 
-.#{$kocktail_class_prefix}text-break {
+.#{$kocktail--class-prefix}text-break {
   word-break: break-all;
 }
 
-.#{$kocktail_class_prefix}text-dots {
+.#{$kocktail--class-prefix}text-dots {
   text-overflow: ellipsis;
 }
 
-.#{$kocktail_class_prefix}text-tight {
+.#{$kocktail--class-prefix}text-tight {
   line-height: 1.25;
 }
 
-.#{$kocktail_class_prefix}text-average {
+.#{$kocktail--class-prefix}text-average {
   line-height: 1.5;
 }
 
-.#{$kocktail_class_prefix}text-loose {
+.#{$kocktail--class-prefix}text-loose {
   line-height: 2;
 }
 
-.#{$kocktail_class_prefix}text-upper {
+.#{$kocktail--class-prefix}text-upper {
   text-transform: uppercase;
 }
 
-.#{$kocktail_class_prefix}text-lower {
+.#{$kocktail--class-prefix}text-lower {
   text-transform: lowercase;
 }
 
-.#{$kocktail_class_prefix}no-list {
+.#{$kocktail--class-prefix}no-list {
   list-style: none;
 }
 
-.#{$kocktail_class_prefix}no-leading {
+.#{$kocktail--class-prefix}no-leading {
   line-height: 0;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Media queries
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .text-center--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      text-align: center;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .text-left--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      text-align: left;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .text-right--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      text-align: right;
+    }
+  }
 }

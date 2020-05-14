@@ -1,26 +1,12 @@
-.#{$kocktail_class_prefix}transparent {
+.#{$kocktail--class-prefix}transparent {
   opacity: 0;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        opacity: 0;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}opaque {
+.#{$kocktail--class-prefix}opaque {
   opacity: 1;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        opacity: 1;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}hover-trigger {
+.#{$kocktail--class-prefix}hover-trigger {
   &:hover,
   &:focus {
     .hover-content {
@@ -29,22 +15,40 @@
   }
 }
 
-.#{$kocktail_class_prefix}float-left {
+.#{$kocktail--class-prefix}float-left {
   float: left;
 }
 
-.#{$kocktail_class_prefix}float-right {
+.#{$kocktail--class-prefix}float-right {
   float: right;
 }
 
-.#{$kocktail_class_prefix}color-white {
+.#{$kocktail--class-prefix}color-white {
   color: white;
 }
 
-.#{$kocktail_class_prefix}color-black {
+.#{$kocktail--class-prefix}color-black {
   color: black;
 }
 
-.#{$kocktail_class_prefix}fill-current-color {
+.#{$kocktail--class-prefix}fill-current-color {
   fill: currentColor;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Media queries
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .transparent--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      opacity: 0;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .opaque--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      opacity: 1;
+    }
+  }
 }

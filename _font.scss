@@ -1,122 +1,133 @@
-.#{$kocktail_class_prefix}font-xs {
+.#{$kocktail--class-prefix}font-xs {
   font-size: 0.75rem;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        font-size: 0.75rem;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}font-sm {
+.#{$kocktail--class-prefix}font-sm {
   font-size: 0.875rem;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        font-size: 0.875rem;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}font-nl {
+.#{$kocktail--class-prefix}font-nl {
   font-size: 1rem;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        font-size: 1rem;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}font-lg {
+.#{$kocktail--class-prefix}font-lg {
   font-size: 1.25rem;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        font-size: 1.25rem;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}font-xl {
+.#{$kocktail--class-prefix}font-xl {
   font-size: 1.5rem;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        font-size: 1.5rem;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}font-2xl {
+.#{$kocktail--class-prefix}font-2xl {
   font-size: 1.875rem;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        font-size: 1.875rem;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}font-3xl {
+.#{$kocktail--class-prefix}font-3xl {
   font-size: 2.25rem;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        font-size: 2.25rem;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}font-4xl {
+.#{$kocktail--class-prefix}font-4xl {
   font-size: 3rem;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        font-size: 3rem;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}font-5xl {
+.#{$kocktail--class-prefix}font-5xl {
   font-size: 4rem;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        font-size: 4rem;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}font-light {
+.#{$kocktail--class-prefix}font-light {
   font-weight: 300;
 }
 
-.#{$kocktail_class_prefix}font-normal {
+.#{$kocktail--class-prefix}font-normal {
   font-weight: normal;
 }
 
-.#{$kocktail_class_prefix}font-medium {
+.#{$kocktail--class-prefix}font-medium {
   font-weight: 500;
 }
 
-.#{$kocktail_class_prefix}font-bold {
+.#{$kocktail--class-prefix}font-bold {
   font-weight: bold;
 }
 
-.#{$kocktail_class_prefix}font-black {
+.#{$kocktail--class-prefix}font-black {
   font-weight: 900;
 }
 
-.#{$kocktail_class_prefix}font-italic {
+.#{$kocktail--class-prefix}font-italic {
   font-style: italic;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Media queries
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .font-xs--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .font-sm--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .font-nl--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      font-size: 1rem;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .font-lg--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .font-xl--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .font-2xl--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      font-size: 1.875rem;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .font-3xl--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      font-size: 2.25rem;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .font-4xl--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      font-size: 3rem;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .font-5xl--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      font-size: 4rem;
+    }
+  }
 }

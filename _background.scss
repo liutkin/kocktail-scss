@@ -1,47 +1,47 @@
-.#{$kocktail_class_prefix}#{$kocktail_class_prefix}bg-center {
+.#{$kocktail--class-prefix}bg-center {
   background-position: center center;
 }
 
-.#{$kocktail_class_prefix}bg-top {
+.#{$kocktail--class-prefix}bg-top {
   background-position: center top;
 }
 
-.#{$kocktail_class_prefix}bg-right {
+.#{$kocktail--class-prefix}bg-right {
   background-position: right center;
 }
 
-.#{$kocktail_class_prefix}bg-bottom {
+.#{$kocktail--class-prefix}bg-bottom {
   background-position: center bottom;
 }
 
-.#{$kocktail_class_prefix}bg-left {
+.#{$kocktail--class-prefix}bg-left {
   background-position: left center;
 }
 
-.#{$kocktail_class_prefix}bg-cover {
+.#{$kocktail--class-prefix}bg-cover {
   background-size: cover;
 }
 
-.#{$kocktail_class_prefix}bg-contain {
+.#{$kocktail--class-prefix}bg-contain {
   background-size: contain;
 }
 
-.#{$kocktail_class_prefix}bg-width-full {
+.#{$kocktail--class-prefix}bg-width-full {
   background-size: 100% auto;
 }
 
-.#{$kocktail_class_prefix}bg-height-full {
+.#{$kocktail--class-prefix}bg-height-full {
   background-size: auto 100%;
 }
 
-.#{$kocktail_class_prefix}bg-no-repeat {
+.#{$kocktail--class-prefix}bg-no-repeat {
   background-repeat: no-repeat;
 }
 
-.#{$kocktail_class_prefix}bg-fixed {
+.#{$kocktail--class-prefix}bg-fixed {
   background-attachment: fixed;
 }
 
-.#{$kocktail_class_prefix}bg-white {
+.#{$kocktail--class-prefix}bg-white {
   background-color: white;
 }

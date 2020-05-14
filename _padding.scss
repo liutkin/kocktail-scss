@@ -1,78 +1,80 @@
-@each $nameSizeSuffix, $valueSizeSuffix in $sizeList {
-  .#{$kocktail_class_prefix}padding-top-#{$nameSizeSuffix},
-  .#{$kocktail_class_prefix}padding-y-#{$nameSizeSuffix},
-  .#{$kocktail_class_prefix}padding-#{$nameSizeSuffix} {
-    padding-top: $valueSizeSuffix;
+@each $--kocktail--name-size-suffix, $--kocktail--value-size-suffix in $--kocktail--size-list {
+  .#{$kocktail--class-prefix}padding-top-#{$--kocktail--name-size-suffix},
+  .#{$kocktail--class-prefix}padding-y-#{$--kocktail--name-size-suffix},
+  .#{$kocktail--class-prefix}padding-#{$--kocktail--name-size-suffix} {
+    padding-top: $--kocktail--value-size-suffix;
   }
 }
 
-@each $breakpointName, $breakpointWidth in $breakpointSuffixWidthList {
-  @media screen and (min-width: $breakpointWidth) {
-    @each $nameSizeSuffix, $valueSizeSuffix in $sizeList {
-      .#{$kocktail_class_prefix}padding-top-#{$nameSizeSuffix}--#{$breakpointName},
-      .#{$kocktail_class_prefix}padding-y-#{$nameSizeSuffix}--#{$breakpointName},
-      .#{$kocktail_class_prefix}padding-#{$nameSizeSuffix}--#{$breakpointName} {
-        padding-top: $valueSizeSuffix;
+@each $--kocktail--name-size-suffix, $--kocktail--value-size-suffix in $--kocktail--size-list {
+  .#{$kocktail--class-prefix}padding-right-#{$--kocktail--name-size-suffix},
+  .#{$kocktail--class-prefix}padding-x-#{$--kocktail--name-size-suffix},
+  .#{$kocktail--class-prefix}padding-#{$--kocktail--name-size-suffix} {
+    padding-right: $--kocktail--value-size-suffix;
+  }
+}
+
+@each $--kocktail--name-size-suffix, $--kocktail--value-size-suffix in $--kocktail--size-list {
+  .#{$kocktail--class-prefix}padding-bottom-#{$--kocktail--name-size-suffix},
+  .#{$kocktail--class-prefix}padding-y-#{$--kocktail--name-size-suffix},
+  .#{$kocktail--class-prefix}padding-#{$--kocktail--name-size-suffix} {
+    padding-bottom: $--kocktail--value-size-suffix;
+  }
+}
+
+@each $--kocktail--name-size-suffix, $--kocktail--value-size-suffix in $--kocktail--size-list {
+  .#{$kocktail--class-prefix}padding-left-#{$--kocktail--name-size-suffix},
+  .#{$kocktail--class-prefix}padding-x-#{$--kocktail--name-size-suffix},
+  .#{$kocktail--class-prefix}padding-#{$--kocktail--name-size-suffix} {
+    padding-left: $--kocktail--value-size-suffix;
+  }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Media queries
+
+@each $--kocktail--breakpoint-name, $--kocktail--breakpoint-width in $--kocktail--breakpoint-suffix-width-list {
+  @media screen and (min-width: $--kocktail--breakpoint-width) {
+    @each $--kocktail--name-size-suffix, $--kocktail--value-size-suffix in $--kocktail--size-list {
+      .#{$kocktail--class-prefix}padding-top-#{$--kocktail--name-size-suffix}--#{$--kocktail--breakpoint-name},
+      .#{$kocktail--class-prefix}padding-y-#{$--kocktail--name-size-suffix}--#{$--kocktail--breakpoint-name},
+      .#{$kocktail--class-prefix}padding-#{$--kocktail--name-size-suffix}--#{$--kocktail--breakpoint-name} {
+        padding-top: $--kocktail--value-size-suffix;
       }
     }
   }
 }
 
-@each $nameSizeSuffix, $valueSizeSuffix in $sizeList {
-  .#{$kocktail_class_prefix}padding-right-#{$nameSizeSuffix},
-  .#{$kocktail_class_prefix}padding-x-#{$nameSizeSuffix},
-  .#{$kocktail_class_prefix}padding-#{$nameSizeSuffix} {
-    padding-right: $valueSizeSuffix;
-  }
-}
-
-@each $breakpointName, $breakpointWidth in $breakpointSuffixWidthList {
-  @media screen and (min-width: $breakpointWidth) {
-    @each $nameSizeSuffix, $valueSizeSuffix in $sizeList {
-      .#{$kocktail_class_prefix}padding-right-#{$nameSizeSuffix}--#{$breakpointName},
-      .#{$kocktail_class_prefix}padding-x-#{$nameSizeSuffix}--#{$breakpointName},
-      .#{$kocktail_class_prefix}padding-#{$nameSizeSuffix}--#{$breakpointName} {
-        padding-right: $valueSizeSuffix;
+@each $--kocktail--breakpoint-name, $--kocktail--breakpoint-width in $--kocktail--breakpoint-suffix-width-list {
+  @media screen and (min-width: $--kocktail--breakpoint-width) {
+    @each $--kocktail--name-size-suffix, $--kocktail--value-size-suffix in $--kocktail--size-list {
+      .#{$kocktail--class-prefix}padding-right-#{$--kocktail--name-size-suffix}--#{$--kocktail--breakpoint-name},
+      .#{$kocktail--class-prefix}padding-x-#{$--kocktail--name-size-suffix}--#{$--kocktail--breakpoint-name},
+      .#{$kocktail--class-prefix}padding-#{$--kocktail--name-size-suffix}--#{$--kocktail--breakpoint-name} {
+        padding-right: $--kocktail--value-size-suffix;
       }
     }
   }
 }
 
-@each $nameSizeSuffix, $valueSizeSuffix in $sizeList {
-  .#{$kocktail_class_prefix}padding-bottom-#{$nameSizeSuffix},
-  .#{$kocktail_class_prefix}padding-y-#{$nameSizeSuffix},
-  .#{$kocktail_class_prefix}padding-#{$nameSizeSuffix} {
-    padding-bottom: $valueSizeSuffix;
-  }
-}
-
-@each $breakpointName, $breakpointWidth in $breakpointSuffixWidthList {
-  @media screen and (min-width: $breakpointWidth) {
-    @each $nameSizeSuffix, $valueSizeSuffix in $sizeList {
-      .#{$kocktail_class_prefix}padding-bottom-#{$nameSizeSuffix}--#{$breakpointName},
-      .#{$kocktail_class_prefix}padding-y-#{$nameSizeSuffix}--#{$breakpointName},
-      .#{$kocktail_class_prefix}padding-#{$nameSizeSuffix}--#{$breakpointName} {
-        padding-bottom: $valueSizeSuffix;
+@each $--kocktail--breakpoint-name, $--kocktail--breakpoint-width in $--kocktail--breakpoint-suffix-width-list {
+  @media screen and (min-width: $--kocktail--breakpoint-width) {
+    @each $--kocktail--name-size-suffix, $--kocktail--value-size-suffix in $--kocktail--size-list {
+      .#{$kocktail--class-prefix}padding-bottom-#{$--kocktail--name-size-suffix}--#{$--kocktail--breakpoint-name},
+      .#{$kocktail--class-prefix}padding-y-#{$--kocktail--name-size-suffix}--#{$--kocktail--breakpoint-name},
+      .#{$kocktail--class-prefix}padding-#{$--kocktail--name-size-suffix}--#{$--kocktail--breakpoint-name} {
+        padding-bottom: $--kocktail--value-size-suffix;
       }
     }
   }
 }
 
-@each $nameSizeSuffix, $valueSizeSuffix in $sizeList {
-  .#{$kocktail_class_prefix}padding-left-#{$nameSizeSuffix},
-  .#{$kocktail_class_prefix}padding-x-#{$nameSizeSuffix},
-  .#{$kocktail_class_prefix}padding-#{$nameSizeSuffix} {
-    padding-left: $valueSizeSuffix;
-  }
-}
-
-@each $breakpointName, $breakpointWidth in $breakpointSuffixWidthList {
-  @media screen and (min-width: $breakpointWidth) {
-    @each $nameSizeSuffix, $valueSizeSuffix in $sizeList {
-      .#{$kocktail_class_prefix}padding-left-#{$nameSizeSuffix}--#{$breakpointName},
-      .#{$kocktail_class_prefix}padding-x-#{$nameSizeSuffix}--#{$breakpointName},
-      .#{$kocktail_class_prefix}padding-#{$nameSizeSuffix}--#{$breakpointName} {
-        padding-left: $valueSizeSuffix;
+@each $--kocktail--breakpoint-name, $--kocktail--breakpoint-width in $--kocktail--breakpoint-suffix-width-list {
+  @media screen and (min-width: $--kocktail--breakpoint-width) {
+    @each $--kocktail--name-size-suffix, $--kocktail--value-size-suffix in $--kocktail--size-list {
+      .#{$kocktail--class-prefix}padding-left-#{$--kocktail--name-size-suffix}--#{$--kocktail--breakpoint-name},
+      .#{$kocktail--class-prefix}padding-x-#{$--kocktail--name-size-suffix}--#{$--kocktail--breakpoint-name},
+      .#{$kocktail--class-prefix}padding-#{$--kocktail--name-size-suffix}--#{$--kocktail--breakpoint-name} {
+        padding-left: $--kocktail--value-size-suffix;
       }
     }
   }

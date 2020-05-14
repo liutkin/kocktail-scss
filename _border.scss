@@ -1,31 +1,35 @@
-.#{$kocktail_class_prefix}border-round {
+.#{$kocktail--class-prefix}border-round {
   border-radius: 100%;
 }
 
-.#{$kocktail_class_prefix}border-rounded-1 {
+.#{$kocktail--class-prefix}border-rounded-1 {
   border-radius: 0.125rem;
 }
 
-.#{$kocktail_class_prefix}border-rounded-2 {
+.#{$kocktail--class-prefix}border-rounded-2 {
   border-radius: 0.25rem;
 }
 
-.#{$kocktail_class_prefix}border-rounded-3 {
+.#{$kocktail--class-prefix}border-rounded-3 {
   border-radius: 0.5rem;
 }
 
-.#{$kocktail_class_prefix}border-rounded-4 {
+.#{$kocktail--class-prefix}border-rounded-4 {
   border-radius: 0.75rem;
 }
 
-.#{$kocktail_class_prefix}border-rounded-5 {
+.#{$kocktail--class-prefix}border-rounded-5 {
   border-radius: 1rem;
 }
 
-.#{$kocktail_class_prefix}border-rounded-6 {
+.#{$kocktail--class-prefix}border-rounded-6 {
+  border-radius: 1.5rem;
+}
+
+.#{$kocktail--class-prefix}border-rounded-7 {
   border-radius: 2rem;
 }
 
-.#{$kocktail_class_prefix}border-rounded-max {
+.#{$kocktail--class-prefix}border-rounded-max {
   border-radius: 9999px;
 }

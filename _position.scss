@@ -1,108 +1,73 @@
-.#{$kocktail_class_prefix}static {
+.#{$kocktail--class-prefix}static {
   position: static;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        position: static;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}relative {
+.#{$kocktail--class-prefix}relative {
   position: relative;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        position: relative;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}absolute {
+.#{$kocktail--class-prefix}absolute {
   position: absolute;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        position: absolute;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}fixed {
+.#{$kocktail--class-prefix}fixed {
   position: fixed;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        position: fixed;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}sticky {
+.#{$kocktail--class-prefix}sticky {
   position: sticky;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        position: sticky;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}top-0 {
+.#{$kocktail--class-prefix}top-0 {
   top: 0;
 }
 
-.#{$kocktail_class_prefix}right-0 {
+.#{$kocktail--class-prefix}right-0 {
   right: 0;
 }
 
-.#{$kocktail_class_prefix}bottom-0 {
+.#{$kocktail--class-prefix}bottom-0 {
   bottom: 0;
 }
 
-.#{$kocktail_class_prefix}left-0 {
+.#{$kocktail--class-prefix}left-0 {
   left: 0;
 }
 
-.#{$kocktail_class_prefix}top-full {
+.#{$kocktail--class-prefix}top-full {
   top: 100%;
 }
 
-.#{$kocktail_class_prefix}right-full {
+.#{$kocktail--class-prefix}right-full {
   right: 100%;
 }
 
-.#{$kocktail_class_prefix}bottom-full {
+.#{$kocktail--class-prefix}bottom-full {
   bottom: 100%;
 }
 
-.#{$kocktail_class_prefix}left-full {
+.#{$kocktail--class-prefix}left-full {
   left: 100%;
 }
 
-.#{$kocktail_class_prefix}stretch {
+.#{$kocktail--class-prefix}stretch {
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
 }
 
-.#{$kocktail_class_prefix}center-x {
+.#{$kocktail--class-prefix}center-x {
   left: 50%;
   transform: translateX(-50%);
 }
 
-.#{$kocktail_class_prefix}center-y {
+.#{$kocktail--class-prefix}center-y {
   top: 50%;
   transform: translateY(-50%);
 }
 
-.#{$kocktail_class_prefix}center {
+.#{$kocktail--class-prefix}center {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -110,12 +75,54 @@
 
 $i: 1;
 @while $i <= 5 {
-  .#{$kocktail_class_prefix}z-index-#{$i} {
+  .#{$kocktail--class-prefix}z-index-#{$i} {
     z-index: #{$i};
   }
   $i: $i + 1;
 }
 
-.#{$kocktail_class_prefix}z-index-max {
+.#{$kocktail--class-prefix}z-index-max {
   z-index: 2147483647;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Media queries
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .static--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      position: static;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .relative--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      position: relative;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .absolute--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      position: absolute;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .fixed--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      position: fixed;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .sticky--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      position: sticky;
+    }
+  }
 }

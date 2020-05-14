@@ -1,68 +1,80 @@
-@each $nameSizeSuffix, $valueSizeSuffix in $gridSpanList {
-  .#{$kocktail_class_prefix}grid-column-#{$nameSizeSuffix} {
-    grid-column: $valueSizeSuffix;
-    @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList
-    {
-      &--#{$nameBreakpointSuffix} {
-        @include respondTo(#{$valueBreakpointSuffix}) {
-          grid-column: $valueSizeSuffix;
-        }
+@each $--kocktail--name-size-suffix, $--kocktail--value-size-suffix in $--kocktail--grid-span-list {
+  .#{$kocktail--class-prefix}grid-column-#{$--kocktail--name-size-suffix} {
+    grid-column: $--kocktail--value-size-suffix;
+  }
+}
+
+@each $--kocktail--name-size-suffix, $--kocktail--value-size-suffix in $--kocktail--grid-span-list {
+  .#{$kocktail--class-prefix}grid-column-start-#{$--kocktail--name-size-suffix} {
+    grid-column-start: $--kocktail--name-size-suffix;
+  }
+}
+
+@each $--kocktail--name-size-suffix, $--kocktail--value-size-suffix in $--kocktail--grid-gap-list {
+  .#{$kocktail--class-prefix}grid-column-gap-#{$--kocktail--name-size-suffix} {
+    grid-column-gap: $--kocktail--value-size-suffix;
+  }
+}
+
+@each $--kocktail--name-size-suffix, $--kocktail--value-size-suffix in $--kocktail--grid-gap-list {
+  .#{$kocktail--class-prefix}grid-row-gap-#{$--kocktail--name-size-suffix} {
+    grid-row-gap: $--kocktail--value-size-suffix;
+  }
+}
+
+@each $--kocktail--name-size-suffix, $--kocktail--value-size-suffix in $--kocktail--grid-gap-list {
+  .#{$kocktail--class-prefix}grid-gap-#{$--kocktail--name-size-suffix} {
+    grid-gap: $--kocktail--value-size-suffix;
+  }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Media queries
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  @each $--kocktail--name-size-suffix, $--kocktail--value-size-suffix in $--kocktail--grid-span-list {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      .#{$kocktail--class-prefix}grid-column-#{$--kocktail--name-size-suffix}--#{$--kocktail--breakpoint-name} {
+        grid-column: $--kocktail--value-size-suffix;
       }
     }
   }
 }
 
-@each $nameSizeSuffix, $valueSizeSuffix in $gridSpanList {
-  .#{$kocktail_class_prefix}grid-column-start-#{$nameSizeSuffix} {
-    grid-column-start: $nameSizeSuffix;
-    @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList
-    {
-      &--#{$nameBreakpointSuffix} {
-        @include respondTo(#{$valueBreakpointSuffix}) {
-          grid-column-start: $nameSizeSuffix;
-        }
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  @each $--kocktail--name-size-suffix, $--kocktail--value-size-suffix in $--kocktail--grid-span-list {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      .#{$kocktail--class-prefix}grid-column-start-#{$--kocktail--name-size-suffix}--#{$--kocktail--breakpoint-name} {
+        grid-column-start: $--kocktail--name-size-suffix;
       }
     }
   }
 }
 
-@each $nameSizeSuffix, $valueSizeSuffix in $gridGapList {
-  .#{$kocktail_class_prefix}grid-column-gap-#{$nameSizeSuffix} {
-    grid-column-gap: $valueSizeSuffix;
-    @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList
-    {
-      &--#{$nameBreakpointSuffix} {
-        @include respondTo(#{$valueBreakpointSuffix}) {
-          grid-column-gap: $valueSizeSuffix;
-        }
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  @each $--kocktail--name-size-suffix, $--kocktail--value-size-suffix in $--kocktail--grid-gap-list {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      .#{$kocktail--class-prefix}grid-column-gap-#{$--kocktail--name-size-suffix}--#{$--kocktail--breakpoint-name} {
+        grid-column-gap: $--kocktail--value-size-suffix;
       }
     }
   }
 }
 
-@each $nameSizeSuffix, $valueSizeSuffix in $gridGapList {
-  .#{$kocktail_class_prefix}grid-row-gap-#{$nameSizeSuffix} {
-    grid-row-gap: $valueSizeSuffix;
-    @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList
-    {
-      &--#{$nameBreakpointSuffix} {
-        @include respondTo(#{$valueBreakpointSuffix}) {
-          grid-row-gap: $valueSizeSuffix;
-        }
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  @each $--kocktail--name-size-suffix, $--kocktail--value-size-suffix in $--kocktail--grid-gap-list {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      .#{$kocktail--class-prefix}grid-row-gap-#{$--kocktail--name-size-suffix}--#{$--kocktail--breakpoint-name} {
+        grid-row-gap: $--kocktail--value-size-suffix;
       }
     }
   }
 }
 
-@each $nameSizeSuffix, $valueSizeSuffix in $gridGapList {
-  .#{$kocktail_class_prefix}grid-gap-#{$nameSizeSuffix} {
-    grid-gap: $valueSizeSuffix;
-    @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList
-    {
-      &--#{$nameBreakpointSuffix} {
-        @include respondTo(#{$valueBreakpointSuffix}) {
-          grid-gap: $valueSizeSuffix;
-        }
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  @each $--kocktail--name-size-suffix, $--kocktail--value-size-suffix in $--kocktail--grid-gap-list {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      .#{$kocktail--class-prefix}grid-gap-#{$--kocktail--name-size-suffix}--#{$--kocktail--breakpoint-name} {
+        grid-gap: $--kocktail--value-size-suffix;
       }
     }
   }

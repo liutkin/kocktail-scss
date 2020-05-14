@@ -1,6 +1,6 @@
 {
   "name": "@kocktail/scss",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Functional CSS classes.",
   "main": "kocktail.scss",
   "keywords": [

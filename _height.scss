@@ -1,76 +1,85 @@
-.#{$kocktail_class_prefix}max-height-full {
+.#{$kocktail--class-prefix}max-height-full {
   max-height: 100%;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        max-height: 100%;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}max-height-full-view {
+.#{$kocktail--class-prefix}max-height-full-view {
   max-height: 100vh;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        max-height: 100vh;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}min-height-full {
+.#{$kocktail--class-prefix}min-height-full {
   min-height: 100%;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        min-height: 100%;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}min-height-full-view {
+.#{$kocktail--class-prefix}min-height-full-view {
   min-height: 100vh;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        min-height: 100vh;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}height-full-view {
+.#{$kocktail--class-prefix}height-full-view {
   height: 100vh;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        height: 100vh;
-      }
-    }
-  }
 }
 
-.#{$kocktail_class_prefix}height-full {
+.#{$kocktail--class-prefix}height-full {
   height: 100%;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        height: 100%;
-      }
+}
+
+.#{$kocktail--class-prefix}height-auto {
+  height: auto;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Media queries
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .max-height-full--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      max-height: 100%;
     }
   }
 }
 
-.#{$kocktail_class_prefix}height-auto {
-  height: auto;
-  @each $nameBreakpointSuffix, $valueBreakpointSuffix in $breakpointSuffixList {
-    &--#{$nameBreakpointSuffix} {
-      @include respondTo(#{$valueBreakpointSuffix}) {
-        height: auto;
-      }
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .max-height-full-view--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      max-height: 100vh;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .min-height-full--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      min-height: 100%;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .min-height-full-view--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      min-height: 100vh;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .height-full-view--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      height: 100vh;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .height-full--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      height: 100%;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .height-auto--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      height: auto;
     }
   }
 }

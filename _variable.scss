@@ -1,74 +1,60 @@
-$kocktail_breakpoint_smartphone: 576px !default;
-$kocktail_breakpoint_tablet: 768px !default;
-$kocktail_breakpoint_netbook: 992px !default;
-$kocktail_breakpoint_notebook: 1200px !default;
-$kocktail_breakpoint_desktop: 1600px !default;
+$kocktail--breakpoint-xs: 576px !default;
+$kocktail--breakpoint-md: 768px !default;
+$kocktail--breakpoint-lg: 992px !default;
+$kocktail--breakpoint-xl: 1200px !default;
+$kocktail--breakpoint-xxl: 1600px !default;
 
-$kocktail_spacing_0: 0 !default;
-$kocktail_spacing_1: 0.25rem !default;
-$kocktail_spacing_2: 0.5rem !default;
-$kocktail_spacing_3: 1rem !default;
-$kocktail_spacing_4: 2rem !default;
-$kocktail_spacing_5: 4rem !default;
-$kocktail_spacing_6: 8rem !default;
+$kocktail--spacing-0: 0 !default;
+$kocktail--spacing-1: 0.25rem !default;
+$kocktail--spacing-2: 0.5rem !default;
+$kocktail--spacing-3: 1rem !default;
+$kocktail--spacing-4: 2rem !default;
+$kocktail--spacing-5: 4rem !default;
+$kocktail--spacing-6: 8rem !default;
 
-$kocktail_grid_gap_0: 0 !default;
-$kocktail_grid_gap_1: 0.25rem !default;
-$kocktail_grid_gap_2: 0.5rem !default;
-$kocktail_grid_gap_3: 1rem !default;
-$kocktail_grid_gap_4: 2rem !default;
-$kocktail_grid_gap_5: 3rem !default;
-$kocktail_grid_gap_6: 4rem !default;
-$kocktail_grid_gap_7: 5rem !default;
+$kocktail--grid-gap-0: 0 !default;
+$kocktail--grid-gap-1: 0.25rem !default;
+$kocktail--grid-gap-2: 0.5rem !default;
+$kocktail--grid-gap-3: 1rem !default;
+$kocktail--grid-gap-4: 2rem !default;
+$kocktail--grid-gap-5: 3rem !default;
+$kocktail--grid-gap-6: 4rem !default;
+$kocktail--grid-gap-7: 5rem !default;
 
-$kocktail_class_prefix: "" !default;
+$kocktail--class-prefix: "" !default;
 
-$breakpointSuffixWidthList: (
-  sm: $kocktail_breakpoint_smartphone,
-  md: $kocktail_breakpoint_tablet,
-  lg: $kocktail_breakpoint_netbook,
-  xl: $kocktail_breakpoint_notebook,
-  xxl: $kocktail_breakpoint_desktop,
+$--kocktail--breakpoint-suffix-width-list: (
+  sm: $kocktail--breakpoint-xs,
+  md: $kocktail--breakpoint-md,
+  lg: $kocktail--breakpoint-lg,
+  xl: $kocktail--breakpoint-xl,
+  xxl: $kocktail--breakpoint-xxl,
 );
 
-$breakpointList: (
-  smartphone: $kocktail_breakpoint_smartphone,
-  tablet: $kocktail_breakpoint_tablet,
-  netbook: $kocktail_breakpoint_netbook,
-  notebook: $kocktail_breakpoint_notebook,
-  desktop: $kocktail_breakpoint_desktop,
+$--kocktail--breakpoint-suffix-list: sm, md, lg, xl, xxl;
+
+$--kocktail--size-list: (
+  0: $kocktail--spacing-0,
+  1: $kocktail--spacing-1,
+  2: $kocktail--spacing-2,
+  3: $kocktail--spacing-3,
+  4: $kocktail--spacing-4,
+  5: $kocktail--spacing-5,
+  6: $kocktail--spacing-6,
 );
 
-$breakpointSuffixList: (
-  sm: smartphone,
-  md: tablet,
-  lg: netbook,
-  xl: notebook,
-  xxl: desktop,
+$--kocktail--grid-gap-list: (
+  0: $kocktail--grid-gap-0,
+  1: $kocktail--grid-gap-1,
+  2: $kocktail--grid-gap-2,
+  3: $kocktail--grid-gap-3,
+  4: $kocktail--grid-gap-4,
+  5: $kocktail--grid-gap-5,
+  6: $kocktail--grid-gap-6,
+  7: $kocktail--grid-gap-7,
 );
 
-$sizeList: (
-  0: $kocktail_spacing_0,
-  1: $kocktail_spacing_1,
-  2: $kocktail_spacing_2,
-  3: $kocktail_spacing_3,
-  4: $kocktail_spacing_4,
-  5: $kocktail_spacing_5,
-  6: $kocktail_spacing_6,
-);
-
-$gridGapList: (
-  0: $kocktail_grid_gap_0,
-  1: $kocktail_grid_gap_1,
-  2: $kocktail_grid_gap_2,
-  3: $kocktail_grid_gap_3,
-  4: $kocktail_grid_gap_4,
-  5: $kocktail_grid_gap_5,
-  6: $kocktail_grid_gap_6,
-  7: $kocktail_grid_gap_7,
-);
-
-$gridSpanList: (
+$--kocktail--grid-span-list: (
   1: span 1 / span 1,
   2: span 2 / span 2,
   3: span 3 / span 3,
