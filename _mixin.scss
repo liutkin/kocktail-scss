@@ -1,11 +1,11 @@
 @mixin respond-to($media, $width) {
-  @if $media == xs {
+  @if $media == sm {
     @if $width == min {
-      @media screen and (min-width: $kocktail--breakpoint-xs) {
+      @media screen and (min-width: $kocktail--breakpoint-sm) {
         @content;
       }
     } @else if $width == max {
-      @media screen and (max-width: $kocktail--breakpoint-xs) {
+      @media screen and (max-width: $kocktail--breakpoint-sm) {
         @content;
       }
     }

@@ -1,4 +1,4 @@
-$kocktail--breakpoint-xs: 576px !default;
+$kocktail--breakpoint-sm: 576px !default;
 $kocktail--breakpoint-md: 768px !default;
 $kocktail--breakpoint-lg: 992px !default;
 $kocktail--breakpoint-xl: 1200px !default;
@@ -24,7 +24,7 @@ $kocktail--grid-gap-7: 5rem !default;
 $kocktail--class-prefix: "" !default;
 
 $--kocktail--breakpoint-suffix-width-list: (
-  sm: $kocktail--breakpoint-xs,
+  sm: $kocktail--breakpoint-sm,
   md: $kocktail--breakpoint-md,
   lg: $kocktail--breakpoint-lg,
   xl: $kocktail--breakpoint-xl,
