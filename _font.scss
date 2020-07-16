@@ -58,6 +58,26 @@
   font-style: italic;
 }
 
+.#{$kocktail--class-prefix}font-cursive {
+  font-family: cursive;
+}
+
+.#{$kocktail--class-prefix}font-fantasy {
+  font-family: fantasy;
+}
+
+.#{$kocktail--class-prefix}font-monospace {
+  font-family: monospace;
+}
+
+.#{$kocktail--class-prefix}font-sans-serif {
+  font-family: sans-serif;
+}
+
+.#{$kocktail--class-prefix}font-serif {
+  font-family: serif;
+}
+
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Media queries
 
 @each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {

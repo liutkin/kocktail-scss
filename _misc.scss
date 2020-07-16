@@ -35,6 +35,14 @@
   fill: currentColor;
 }
 
+.#{$kocktail--class-prefix}fill-white {
+  fill: white;
+}
+
+.#{$kocktail--class-prefix}fill-black {
+  fill: black;
+}
+
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Media queries
 
 @each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
