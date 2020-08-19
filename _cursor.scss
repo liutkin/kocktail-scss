@@ -22,14 +22,6 @@
   cursor: help;
 }
 
-.#{$kocktail--class-prefix}cursor-zoom-in {
-  cursor: zoom-in;
-}
-
 .#{$kocktail--class-prefix}no-select {
   user-select: none;
-}
-
-.#{$kocktail--class-prefix}no-pointer-events {
-  pointer-events: none;
 }

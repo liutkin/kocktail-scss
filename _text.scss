@@ -42,12 +42,20 @@
   text-overflow: ellipsis;
 }
 
+.#{$kocktail--class-prefix}text-tightest {
+  line-height: 1;
+}
+
 .#{$kocktail--class-prefix}text-tight {
   line-height: 1.25;
 }
 
 .#{$kocktail--class-prefix}text-average {
   line-height: 1.5;
+}
+
+.#{$kocktail--class-prefix}text-wide {
+  line-height: 1.75;
 }
 
 .#{$kocktail--class-prefix}text-loose {

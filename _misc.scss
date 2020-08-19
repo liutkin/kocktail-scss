@@ -43,6 +43,14 @@
   fill: black;
 }
 
+.#{$kocktail--class-prefix}flip-vertical {
+  transform: scaleX(-1);
+}
+
+.#{$kocktail--class-prefix}flip-horizontal {
+  transform: scaleY(-1);
+}
+
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Media queries
 
 @each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
