@@ -1,83 +1,83 @@
-.#{$kocktail--class-prefix}.trans-color {
+.#{$kocktail--class-prefix}trans-color {
   transition-property: color;
 }
 
-.#{$kocktail--class-prefix}.trans-bg {
+.#{$kocktail--class-prefix}trans-bg {
   transition-property: background-color;
 }
 
-.#{$kocktail--class-prefix}.trans-transform {
+.#{$kocktail--class-prefix}trans-transform {
   transition-property: transform;
 }
 
-.#{$kocktail--class-prefix}.trans-filter {
+.#{$kocktail--class-prefix}trans-filter {
   transition-property: filter;
 }
 
-.#{$kocktail--class-prefix}.trans-border {
+.#{$kocktail--class-prefix}trans-border {
   transition-property: border;
 }
 
-.#{$kocktail--class-prefix}.trans-opacity {
+.#{$kocktail--class-prefix}trans-opacity {
   transition-property: opacity;
 }
 
-.#{$kocktail--class-prefix}.trans-all {
+.#{$kocktail--class-prefix}trans-all {
   transition-property: all;
 }
 
-.#{$kocktail--class-prefix}.trans-0-1 {
+.#{$kocktail--class-prefix}trans-0-1 {
   transition-duration: 0.1s;
 }
 
-.#{$kocktail--class-prefix}.trans-0-2 {
+.#{$kocktail--class-prefix}trans-0-2 {
   transition-duration: 0.2s;
 }
 
-.#{$kocktail--class-prefix}.trans-0-3 {
+.#{$kocktail--class-prefix}trans-0-3 {
   transition-duration: 0.3s;
 }
 
-.#{$kocktail--class-prefix}.trans-0-4 {
+.#{$kocktail--class-prefix}trans-0-4 {
   transition-duration: 0.4s;
 }
 
-.#{$kocktail--class-prefix}.trans-0-5 {
+.#{$kocktail--class-prefix}trans-0-5 {
   transition-duration: 0.5s;
 }
 
-.#{$kocktail--class-prefix}.trans-0-6 {
+.#{$kocktail--class-prefix}trans-0-6 {
   transition-duration: 0.6s;
 }
 
-.#{$kocktail--class-prefix}.trans-0-7 {
+.#{$kocktail--class-prefix}trans-0-7 {
   transition-duration: 0.7s;
 }
 
-.#{$kocktail--class-prefix}.trans-0-8 {
+.#{$kocktail--class-prefix}trans-0-8 {
   transition-duration: 0.8s;
 }
 
-.#{$kocktail--class-prefix}.trans-0-9 {
+.#{$kocktail--class-prefix}trans-0-9 {
   transition-duration: 0.9s;
 }
 
-.#{$kocktail--class-prefix}.trans-1 {
+.#{$kocktail--class-prefix}trans-1 {
   transition-duration: 1s;
 }
 
-.#{$kocktail--class-prefix}.trans-linear {
+.#{$kocktail--class-prefix}trans-linear {
   transition-timing-function: linear;
 }
 
-.#{$kocktail--class-prefix}.trans-ease-in {
+.#{$kocktail--class-prefix}trans-ease-in {
   transition-timing-function: ease-in;
 }
 
-.#{$kocktail--class-prefix}.trans-ease-out {
+.#{$kocktail--class-prefix}trans-ease-out {
   transition-timing-function: ease-out;
 }
 
-.#{$kocktail--class-prefix}.trans-ease-in-out {
+.#{$kocktail--class-prefix}trans-ease-in-out {
   transition-timing-function: ease-in-out;
 }
