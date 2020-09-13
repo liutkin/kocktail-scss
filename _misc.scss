@@ -34,3 +34,7 @@
 .#{$kocktail--class-prefix}flip-horizontal {
   transform: scaleY(-1);
 }
+
+.#{$kocktail--class-prefix}no-outline {
+  outline: none;
+}
