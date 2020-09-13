@@ -1,0 +1,61 @@
+.#{$kocktail--class-prefix}transparent {
+  opacity: 0;
+}
+
+.#{$kocktail--class-prefix}opacity-1 {
+  opacity: 0.1;
+}
+
+.#{$kocktail--class-prefix}opacity-2 {
+  opacity: 0.2;
+}
+
+.#{$kocktail--class-prefix}opacity-3 {
+  opacity: 0.3;
+}
+
+.#{$kocktail--class-prefix}opacity-4 {
+  opacity: 0.4;
+}
+
+.#{$kocktail--class-prefix}opacity-5 {
+  opacity: 0.5;
+}
+
+.#{$kocktail--class-prefix}opacity-6 {
+  opacity: 0.6;
+}
+
+.#{$kocktail--class-prefix}opacity-7 {
+  opacity: 0.7;
+}
+
+.#{$kocktail--class-prefix}opacity-8 {
+  opacity: 0.8;
+}
+
+.#{$kocktail--class-prefix}opacity-9 {
+  opacity: 0.9;
+}
+
+.#{$kocktail--class-prefix}opaque {
+  opacity: 1;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Media queries
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .transparent--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      opacity: 0;
+    }
+  }
+}
+
+@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
+  .opaque--#{$--kocktail--breakpoint-name} {
+    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
+      opacity: 1;
+    }
+  }
+}

@@ -78,6 +78,14 @@
   line-height: 0;
 }
 
+.#{$kocktail--class-prefix}color-white {
+  color: white;
+}
+
+.#{$kocktail--class-prefix}color-black {
+  color: black;
+}
+
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Media queries
 
 @each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {

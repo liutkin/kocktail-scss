@@ -26,6 +26,10 @@
   transition-property: all;
 }
 
+.#{$kocktail--class-prefix}trans-shadow {
+  transition-property: box-shadow;
+}
+
 .#{$kocktail--class-prefix}trans-0-1 {
   transition-duration: 0.1s;
 }

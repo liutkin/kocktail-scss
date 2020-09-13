@@ -1,11 +1,3 @@
-.#{$kocktail--class-prefix}transparent {
-  opacity: 0;
-}
-
-.#{$kocktail--class-prefix}opaque {
-  opacity: 1;
-}
-
 .#{$kocktail--class-prefix}hover-trigger {
   &:hover,
   &:focus {
@@ -21,14 +13,6 @@
 
 .#{$kocktail--class-prefix}float-right {
   float: right;
-}
-
-.#{$kocktail--class-prefix}color-white {
-  color: white;
-}
-
-.#{$kocktail--class-prefix}color-black {
-  color: black;
 }
 
 .#{$kocktail--class-prefix}fill-current-color {
@@ -49,22 +33,4 @@
 
 .#{$kocktail--class-prefix}flip-horizontal {
   transform: scaleY(-1);
-}
-
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Media queries
-
-@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
-  .transparent--#{$--kocktail--breakpoint-name} {
-    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
-      opacity: 0;
-    }
-  }
-}
-
-@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
-  .opaque--#{$--kocktail--breakpoint-name} {
-    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
-      opacity: 1;
-    }
-  }
 }
