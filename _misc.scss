@@ -16,7 +16,10 @@
 }
 
 .#{$kocktail--class-prefix}fill-current-color {
-  fill: currentColor;
+  &,
+  path {
+    fill: currentColor;
+  }
 }
 
 .#{$kocktail--class-prefix}fill-white {
