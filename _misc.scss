@@ -23,11 +23,17 @@
 }
 
 .#{$kocktail--class-prefix}fill-white {
-  fill: white;
+  &,
+  path {
+    fill: white;
+  }
 }
 
 .#{$kocktail--class-prefix}fill-black {
-  fill: black;
+  &,
+  path {
+    fill: black;
+  }
 }
 
 .#{$kocktail--class-prefix}flip-vertical {
