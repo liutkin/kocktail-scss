@@ -37,3 +37,80 @@
 .#{$kocktail--class-prefix}color-black {
   color: black;
 }
+
+.#{$kocktail--class-prefix}fill-current-color {
+  &,
+  path {
+    fill: currentColor;
+  }
+}
+
+.#{$kocktail--class-prefix}fill-default {
+  &,
+  path {
+    fill: var(--color-default);
+  }
+}
+
+.#{$kocktail--class-prefix}fill-primary {
+  &,
+  path {
+    fill: var(--color-primary);
+  }
+}
+
+.#{$kocktail--class-prefix}fill-accent {
+  &,
+  path {
+    fill: var(--color-accent);
+  }
+}
+
+.#{$kocktail--class-prefix}fill-alt {
+  &,
+  path {
+    fill: var(--color-alt);
+  }
+}
+
+.#{$kocktail--class-prefix}fill-gray {
+  &,
+  path {
+    fill: var(--color-gray);
+  }
+}
+
+.#{$kocktail--class-prefix}fill-red {
+  &,
+  path {
+    fill: var(--color-red);
+  }
+}
+
+.#{$kocktail--class-prefix}fill-green {
+  &,
+  path {
+    fill: var(--color-green);
+  }
+}
+
+.#{$kocktail--class-prefix}fill-blue {
+  &,
+  path {
+    fill: var(--color-blue);
+  }
+}
+
+.#{$kocktail--class-prefix}fill-white {
+  &,
+  path {
+    fill: white;
+  }
+}
+
+.#{$kocktail--class-prefix}fill-black {
+  &,
+  path {
+    fill: black;
+  }
+}

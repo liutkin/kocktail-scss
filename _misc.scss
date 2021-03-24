@@ -64,27 +64,6 @@
   float: right;
 }
 
-.#{$kocktail--class-prefix}fill-current-color {
-  &,
-  path {
-    fill: currentColor;
-  }
-}
-
-.#{$kocktail--class-prefix}fill-white {
-  &,
-  path {
-    fill: white;
-  }
-}
-
-.#{$kocktail--class-prefix}fill-black {
-  &,
-  path {
-    fill: black;
-  }
-}
-
 .#{$kocktail--class-prefix}flip-vertical {
   transform: scaleX(-1);
 }
