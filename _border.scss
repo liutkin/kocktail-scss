@@ -33,3 +33,54 @@
 .#{$kocktail--class-prefix}border-rounded-max {
   border-radius: 9999px;
 }
+
+.#{$kocktail--class-prefix}border-solid {
+  border-style: solid;
+}
+
+.#{$kocktail--class-prefix}border-dashed {
+  border-style: dashed;
+}
+
+.#{$kocktail--class-prefix}border-dotted {
+  border-style: dotted;
+}
+
+.#{$kocktail--class-prefix}border-1 {
+  border-width: 1px;
+}
+.#{$kocktail--class-prefix}border-2 {
+  border-width: 2px;
+}
+
+.#{$kocktail--class-prefix}border-current {
+  border-color: currentColor;
+}
+
+.#{$kocktail--class-prefix}border-primary {
+  border-color: var(--color-primary);
+}
+
+.#{$kocktail--class-prefix}border-gray {
+  border-color: var(--color-gray);
+}
+
+.#{$kocktail--class-prefix}border-accent {
+  border-color: var(--color-accent);
+}
+
+.#{$kocktail--class-prefix}border-alt {
+  border-color: var(--color-alt);
+}
+
+.#{$kocktail--class-prefix}border-red {
+  border-color: var(--color-red);
+}
+
+.#{$kocktail--class-prefix}border-green {
+  border-color: var(--color-green);
+}
+
+.#{$kocktail--class-prefix}border-blue {
+  border-color: var(--color-blue);
+}

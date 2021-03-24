@@ -22,10 +22,6 @@
   vertical-align: bottom;
 }
 
-.#{$kocktail--class-prefix}text-baseline {
-  vertical-align: baseline;
-}
-
 .#{$kocktail--class-prefix}text-nowrap {
   white-space: nowrap;
 }
@@ -76,14 +72,6 @@
 
 .#{$kocktail--class-prefix}no-leading {
   line-height: 0;
-}
-
-.#{$kocktail--class-prefix}color-white {
-  color: white;
-}
-
-.#{$kocktail--class-prefix}color-black {
-  color: black;
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Media queries

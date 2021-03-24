@@ -81,10 +81,6 @@ $i: 1;
   $i: $i + 1;
 }
 
-.#{$kocktail--class-prefix}z-index-max {
-  z-index: 2147483647;
-}
-
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Media queries
 
 @each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {

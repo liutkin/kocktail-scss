@@ -6,22 +6,6 @@
   overflow: auto;
 }
 
-.#{$kocktail--class-prefix}overflow-x-auto {
-  overflow-x: auto;
-}
-
-.#{$kocktail--class-prefix}overflow-y-auto {
-  overflow-y: auto;
-}
-
-.#{$kocktail--class-prefix}overflow-x-hidden {
-  overflow-x: hidden;
-}
-
-.#{$kocktail--class-prefix}overflow-y-hidden {
-  overflow-y: hidden;
-}
-
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Media queries
 
 @each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
@@ -36,38 +20,6 @@
   .overflow-auto--#{$--kocktail--breakpoint-name} {
     @include respond-to(#{$--kocktail--breakpoint-name}, min) {
       overflow: auto;
-    }
-  }
-}
-
-@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
-  .overflow-x-auto--#{$--kocktail--breakpoint-name} {
-    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
-      overflow-x: auto;
-    }
-  }
-}
-
-@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
-  .overflow-y-auto--#{$--kocktail--breakpoint-name} {
-    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
-      overflow-y: auto;
-    }
-  }
-}
-
-@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
-  .overflow-x-hidden--#{$--kocktail--breakpoint-name} {
-    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
-      overflow-x: hidden;
-    }
-  }
-}
-
-@each $--kocktail--breakpoint-name in $--kocktail--breakpoint-suffix-list {
-  .overflow-y-hidden--#{$--kocktail--breakpoint-name} {
-    @include respond-to(#{$--kocktail--breakpoint-name}, min) {
-      overflow-y: hidden;
     }
   }
 }

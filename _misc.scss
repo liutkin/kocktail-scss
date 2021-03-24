@@ -7,6 +7,55 @@
   }
 }
 
+.#{$kocktail--class-prefix}hover-highlight-1 {
+  &:hover,
+  &:focus {
+    filter: brightness(1.05);
+  }
+}
+
+.#{$kocktail--class-prefix}hover-highlight-2 {
+  &:hover,
+  &:focus {
+    filter: brightness(1.1);
+  }
+}
+
+.#{$kocktail--class-prefix}hover-highlight-3 {
+  &:hover,
+  &:focus {
+    filter: brightness(1.15);
+  }
+}
+
+.#{$kocktail--class-prefix}hover-darken-1 {
+  &:hover,
+  &:focus {
+    filter: brightness(0.98);
+  }
+}
+
+.#{$kocktail--class-prefix}hover-darken-2 {
+  &:hover,
+  &:focus {
+    filter: brightness(0.95);
+  }
+}
+
+.#{$kocktail--class-prefix}hover-darken-3 {
+  &:hover,
+  &:focus {
+    filter: brightness(0.92);
+  }
+}
+
+.#{$kocktail--class-prefix}hover-shade {
+  &:hover,
+  &:focus {
+    opacity: 0.75;
+  }
+}
+
 .#{$kocktail--class-prefix}float-left {
   float: left;
 }
@@ -46,4 +95,8 @@
 
 .#{$kocktail--class-prefix}no-outline {
   outline: none;
+}
+
+.#{$kocktail--class-prefix}letter-wide {
+  letter-spacing: 0.05rem;
 }
